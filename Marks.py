@@ -6,3 +6,12 @@ students = {}
 def add_student(name, marks):
     students[name] = marks
     print(f"{name} added successfully!")
+
+# View all students
+def view_students():
+    if not students:
+        print("No records found.")
+    else:
+        print("\nStudent Records:")
+        for name, marks in students.items():
+            print(f"{name}: {marks}")
