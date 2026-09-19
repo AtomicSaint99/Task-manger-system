@@ -15,3 +15,10 @@ def view_students():
         print("\nStudent Records:")
         for name, marks in students.items():
             print(f"{name}: {marks}")
+# Update marks
+def update_marks(name, new_marks):
+    if name in students:
+        students[name] = new_marks
+        print(f"{name}'s marks updated!")
+    else:
+        print("Student not found.")
